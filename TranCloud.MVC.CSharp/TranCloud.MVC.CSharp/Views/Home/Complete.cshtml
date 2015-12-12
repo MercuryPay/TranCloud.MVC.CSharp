@@ -1,0 +1,92 @@
+﻿@model TranCloud.MVC.CSharp.Models.PaymentInfoResponse
+
+@{
+    ViewBag.Title = "Complete";
+}
+
+<div class="container">
+
+    <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
+        <h2>Payment Response Details</h2>
+        <table class="table thumbnail">
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.AcqRefData)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.AcqRefData)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.Amount)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Amount)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.CardholderName)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.CardholderName)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.CardType)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.CardType)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.DisplayMessage)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.DisplayMessage)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.ExpDate)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.ExpDate)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.MaskedAccount)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.MaskedAccount)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.Token)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Token)
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
+            <div class="">
+                <input type="button" class="btn btn-buy" onclick="location.href='/Home';" value="Home" />
+            </div>
+        </div>
+    </div>
+
+</div>
