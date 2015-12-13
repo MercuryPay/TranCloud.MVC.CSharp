@@ -7,7 +7,10 @@
 
 # Overview
 
-Visual Studio MVC website application that shows how to integrate to Datacap's TranCloud platform.
+This repository demonstrates how a cloud based Software as a Service (SaaS) POS application can be designed to interact with locally installed peripherals using components supplied by Datacap System, Inc.
+
+The key driver that facilitates this architecture is Datacap Systems' IPTran LT&trade; Mobile which interacts with Datacap's TranCloud server allowing a Point of Sale to interact with TranCloud via http commands and then the TranCloud server interacts with the IPTran LT&trade; Mobile on the POS' behalf.
+
 
 ![TranCloud.MVC.CSharp](https://github.com/mercurypay/TranCloud.MVC.CSharp/blob/master/screenshot1.PNG)
 
@@ -17,6 +20,8 @@ Visual Studio MVC website application that shows how to integrate to Datacap's T
 # Payment Processing
 
 ##Step 1: Collect and Format Transaction Information
+
+Utilizing an object model set parameters needed to process a transaction.  The example below shows a credit sale transaction.  The class object is then serialized to JSON represented as a string and then passed to the TranCloud server.
 
 
 ```
@@ -44,6 +49,8 @@ var json = new JavaScriptSerializer().Serialize(tranCloudTransaction);
 
 ##Step 2: POST Request to TranCloud
 
+Using the .net libraries a web request is made to the TranCloud server POSTing the JSON above.  Note that you need an API username and password from Datacap prior to executing this sample code.
+
 
 ```
 var request = (HttpWebRequest)WebRequest.Create("https://trancloud.dsipscs.com");
@@ -65,6 +72,8 @@ using (var requestWriter = new StreamWriter(webStream, System.Text.Encoding.ASCI
 
 
 ##Step 3: Process and Display Response
+
+TranCloud communicated with the local IPTran LT&trade; Mobile, the IPTran LT&trade; Mobile drives the pinpad device which prompts for customer interaction, the IPTran LT&trade; Mobile forwards the transaction package to Mercury for authorization, and then the response bubbles back to TranCloud and the POS.
 
 
 ```
