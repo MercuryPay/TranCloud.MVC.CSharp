@@ -121,10 +121,15 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\DisplayData.cs" />
     <Compile Include="Models\Amount.cs" />
+    <Compile Include="Models\ConfigReader.cs" />
     <Compile Include="Models\PaymentInfoResponse.cs" />
+    <Compile Include="Models\TranCloudAdmin.cs" />
     <Compile Include="Models\TranCloudTransaction.cs" />
+    <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Transaction.cs" />
+    <Compile Include="Models\TStreamAdmin.cs" />
     <Compile Include="Models\TStream.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
