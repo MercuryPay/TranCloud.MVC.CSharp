@@ -120,6 +120,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\TranCloudWebRequest.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\DisplayData.cs" />
     <Compile Include="Models\Amount.cs" />

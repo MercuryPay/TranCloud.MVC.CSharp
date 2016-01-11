@@ -9,6 +9,5 @@ namespace TranCloud.MVC.CSharp.Models
     {
         public string Line1;
         public string Line2;
-        public string Line3;
     }
 }
