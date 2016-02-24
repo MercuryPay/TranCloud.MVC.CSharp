@@ -35,7 +35,7 @@ namespace TranCloud.MVC.CSharp.Controllers
             //pop cash drawer
             json = Admin.GetDrawerOpen();
             response = TranCloudWebRequest.DoTranCloudRequest(json);
-            var paymentResponse = new PaymentInfoResponse();
+            paymentResponse = new PaymentInfoResponse();
 
             return View(paymentResponse);
         }

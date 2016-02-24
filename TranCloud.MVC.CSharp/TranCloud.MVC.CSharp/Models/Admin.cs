@@ -46,5 +46,20 @@ namespace TranCloud.MVC.CSharp.Models
 
             return json;
         }
+
+        public static string GetLoadApp()
+        {
+            var tranCloudAdmin = new TranCloudAdmin();
+            tranCloudAdmin.TStream = new TStreamAdmin();
+            tranCloudAdmin.TStream.Admin = new Admin();
+            tranCloudAdmin.TStream.Admin.SecureDevice = "NONE";
+            tranCloudAdmin.TStream.Admin.MerchantID = "NONE";
+            tranCloudAdmin.TStream.Admin.TranCode = "LoadApp";
+            tranCloudAdmin.TStream.Admin.TranDeviceID = ConfigReader.GetDeviceID();
+
+            var json = new JavaScriptSerializer().Serialize(tranCloudAdmin);
+
+            return json;
+        }
     }
 }
