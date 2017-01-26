@@ -1,6 +1,6 @@
 # TranCloud.MVC.CSharp
 
-* More documentation?  http://developer.mercurypay.com
+* More documentation?  https://developer.vantiv.com/docs/DOC-2076
 * Questions?  integrationteam@mercurypay.com
 * **Feature request?** Open an issue.
 * Feel like **contributing**?  Submit a pull request.
