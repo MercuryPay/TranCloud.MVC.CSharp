@@ -9,7 +9,7 @@
 
 This repository demonstrates how a cloud based Software as a Service (SaaS) POS application can be designed to interact with locally installed peripherals using components supplied by Datacap System, Inc.
 
-The key driver that facilitates this architecture is Datacap Systems' IPTran LT&trade; Mobile which interacts with Datacap's TranCloud server allowing a Point of Sale to interact with TranCloud via http commands and then the TranCloud server interacts with the IPTran LT&trade; Mobile on the POS' behalf.
+The key driver that facilitates this architecture is Datacap Systems' TranCloud&trade; appliance which interacts with Datacap's TranCloud&trade; server allowing a Point of Sale to interact with TranCloud&trade; via http commands and then the TranCloud&trade; server interacts with the local TranCloud&trade; applicance on the POS' behalf.
 
 
 ![TranCloud.MVC.CSharp](https://github.com/mercurypay/TranCloud.MVC.CSharp/blob/master/screenshot1.PNG)
@@ -73,7 +73,7 @@ using (var requestWriter = new StreamWriter(webStream, System.Text.Encoding.ASCI
 
 ##Step 3: Process and Display Response
 
-TranCloud communicated with the local IPTran LT&trade; Mobile, the IPTran LT&trade; Mobile drives the pinpad device which prompts for customer interaction, the IPTran LT&trade; Mobile forwards the transaction package to Mercury for authorization, and then the response bubbles back to TranCloud and the POS.
+TranCloud communicated with the local TranCloud&trade; applicance, the TranCloud&trade; applicance drives the pinpad device which prompts for customer interaction, the TranCloud&trade; appliance forwards the transaction package to Mercury for authorization, and then the response bubbles back to TranCloud&trade; and the POS.
 
 
 ```
